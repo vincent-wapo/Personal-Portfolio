@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio website of Vincent John Paa, a Bachelor of Science in Computer Science student.">
+    <title>Vincent John Paa | Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a href="#home" class="logo" aria-label="Go to home">VJ<span>.</span></a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero section" id="home">
+            <div class="container hero-grid">
+                <div class="hero-content reveal">
+                    <p class="eyebrow">Hello, I'm</p>
+                    <h1>Vincent John <span>Paa</span></h1>
+                    <h2>Computer Science Student &amp; Aspiring Developer</h2>
+                    <p class="hero-text">
+                        I enjoy building simple, useful, and user-friendly systems while continuously improving my skills in programming, web development, and software design.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View My Projects</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+
+                    <div class="hero-stats" aria-label="Quick profile highlights">
+                        <div>
+                            <strong>BSCS</strong>
+                            <span>Student</span>
+                        </div>
+                        <div>
+                            <strong>Web</strong>
+                            <span>Development</span>
+                        </div>
+                        <div>
+                            <strong>UI</strong>
+                            <span>Focused</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal">
+                    <div class="photo-frame">
+                        <img src="vincent.jpg" alt="Photo of Vincent John Paa">
+                    </div>
+                    <div class="floating-card card-code">&lt;/&gt; Developer</div>
+                    <div class="floating-card card-student">BSCS Student</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section resume-section" id="resume">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">My Background</p>
+                    <h2>Resume</h2>
+                    <p>A short overview of my education, experience, and technical skills.</p>
+                </div>
+
+                <div class="resume-grid">
+                    <article class="resume-card reveal">
+                        <div class="card-label">Education</div>
+                        <h3>Bachelor of Science in Computer Science</h3>
+                        <p class="muted">College Student</p>
+                        <p>
+                            Currently developing my knowledge in programming, algorithms, software engineering, web development, and computer systems.
+                        </p>
+                    </article>
+
+                    <article class="resume-card reveal">
+                        <div class="card-label">Experience</div>
+                        <h3>Academic &amp; Personal Development</h3>
+                        <p class="muted">School and Independent Projects</p>
+                        <p>
+                            I build class projects and practice applications that strengthen my skills in front-end development, programming logic, system planning, and debugging.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="skills-panel reveal">
+                    <div>
+                        <p class="eyebrow">Technical Skills</p>
+                        <h3>Tools &amp; Technologies</h3>
+                    </div>
+                    <div class="skill-list" aria-label="Technical skills">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Java</span>
+                        <span>VS Code</span>
+                        <span>Git Basics</span>
+                        <span>Problem Solving</span>
+                    </div>
+                </div>
+
+                <div class="resume-action reveal">
+                    <a href="#projects" class="btn btn-primary">View Capstone / Major Projects</a>
+                    <button class="btn btn-outline" id="printResume" type="button">Print Resume Section</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">What I've Built</p>
+                    <h2>Featured Projects</h2>
+                    <p>Some academic and personal projects that show my current development skills.</p>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card reveal">
+                        <div class="project-preview preview-one" role="img" aria-label="Red and black dashboard-style preview for SKTrace project">
+                            <span>01</span>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-topline">
+                                <p>Web System</p>
+                                <span>Featured</span>
+                            </div>
+                            <h3>SKTrace Portal</h3>
+                            <p>
+                                A proposed SK information and records platform focused on project monitoring, budget information, announcements, transparency, and community feedback.
+                            </p>
+                            <div class="project-tags">
+                                <span>System Design</span>
+                                <span>Web</span>
+                                <span>UI/UX</span>
+                            </div>
+                            <a href="#contact" class="text-link">Ask me about this project →</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-preview preview-two" role="img" aria-label="Code-inspired preview for lexer parser and AST evaluator project">
+                            <span>02</span>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-topline">
+                                <p>Programming</p>
+                                <span>Academic</span>
+                            </div>
+                            <h3>Lexer, Parser &amp; AST Evaluator</h3>
+                            <p>
+                                A JavaScript-based program that tokenizes input, parses expressions, builds an abstract syntax tree, and evaluates the result.
+                            </p>
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>Parsing</span>
+                                <span>AST</span>
+                            </div>
+                            <a href="#contact" class="text-link">Ask me about this project →</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-preview preview-three" role="img" aria-label="Portfolio page preview for personal website project">
+                            <span>03</span>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-topline">
+                                <p>Front-End</p>
+                                <span>Personal</span>
+                            </div>
+                            <h3>Personal Portfolio Website</h3>
+                            <p>
+                                A responsive personal website created with semantic HTML, organized CSS, and JavaScript interactions for navigation and user feedback.
+                            </p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <a href="#home" class="text-link">You are viewing it now →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section about-section" id="about">
+            <div class="container about-grid">
+                <div class="about-panel reveal">
+                    <p class="eyebrow">More About Me</p>
+                    <h2>I like learning by building.</h2>
+                    <p>
+                        I am a Computer Science student interested in programming, web development, software systems, and technology. I enjoy turning ideas and school requirements into working projects that are simple to understand and easy to use.
+                    </p>
+                    <p>
+                        I am still improving my technical skills, so I treat every project as a chance to practice problem solving, debugging, design, and writing cleaner code.
+                    </p>
+                </div>
+
+                <div class="interest-card reveal">
+                    <p class="eyebrow">Interests</p>
+                    <ul class="interest-list">
+                        <li><span>01</span> Web Development</li>
+                        <li><span>02</span> Software &amp; System Design</li>
+                        <li><span>03</span> Programming Fundamentals</li>
+                        <li><span>04</span> UI and Responsive Design</li>
+                        <li><span>05</span> Learning New Technologies</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+            <div class="container contact-grid">
+                <div class="contact-copy reveal">
+                    <p class="eyebrow">Get In Touch</p>
+                    <h2>Let's Connect</h2>
+                    <p>
+                        If you want to talk about a project, school activity, collaboration, or technology, you can send me a message using the form.
+                    </p>
+
+                    <div class="contact-details">
+                        <div>
+                            <span>Email</span>
+                            <a href="mailto:vincentjohnpaa@gmail.com">vincentjohnpaa@gmail.com</a>
+                        </div>
+                        <div>
+                            <span>Location</span>
+                            <p>Philippines</p>
+                        </div>
+                        <div>
+                            <span>Social</span>
+                            <p>GITHUB: vincent-wapo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form reveal" id="contactForm">
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    <p class="form-status" id="formStatus" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a href="#home" class="logo">VJ<span>.</span></a>
+            <p>Designed and coded by Vincent John Paa.</p>
+            <p>&copy; <span id="year"></span> All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        const navItems = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('main section[id]');
+        const backToTop = document.getElementById('backToTop');
+        const form = document.getElementById('contactForm');
+        const formStatus = document.getElementById('formStatus');
+        const printResume = document.getElementById('printResume');
+
+        menuToggle.addEventListener('click', () => {
+            const isOpen = navLinks.classList.toggle('show');
+            menuToggle.classList.toggle('open', isOpen);
+            menuToggle.setAttribute('aria-expanded', isOpen);
+        });
+
+        navItems.forEach((link) => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('show');
+                menuToggle.classList.remove('open');
+                menuToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        function updateActiveLink() {
+            let currentSection = 'home';
+
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop - 140;
+                if (window.scrollY >= sectionTop) {
+                    currentSection = section.id;
+                }
+            });
+
+            navItems.forEach((link) => {
+                link.classList.toggle('active', link.getAttribute('href') === `#${currentSection}`);
+            });
+        }
+
+        window.addEventListener('scroll', () => {
+            updateActiveLink();
+            backToTop.classList.toggle('show', window.scrollY > 500);
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.reveal').forEach((element) => {
+            revealObserver.observe(element);
+        });
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const visitorName = document.getElementById('name').value.trim();
+            formStatus.textContent = `Thanks, ${visitorName}! This demo form is working, but connect it to a form service or backend to receive real messages.`;
+            form.reset();
+        });
+
+        printResume.addEventListener('click', () => {
+            document.body.classList.add('print-resume');
+            window.print();
+            document.body.classList.remove('print-resume');
+        });
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+        updateActiveLink();
+    </script>
+</body>
+</html>
